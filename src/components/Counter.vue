@@ -4,8 +4,8 @@
 
 <script>
 import {
-  onBeforeMount, onBeforeUnmount, onBeforeUpdate,
-  onMounted, onUpdated,
+  onBeforeUnmount,
+  onMounted,
 // eslint-disable-next-line import/no-extraneous-dependencies
 } from '@vue/runtime-core';
 
@@ -18,18 +18,8 @@ export default {
     };
   },
   setup() {
-    onBeforeMount(() => {
-    });
     onMounted(() => {
       this.startCount();
-    });
-    onBeforeUpdate(() => {
-      // eslint-disable-next-line no-console
-      console.log('Before Update!');
-    });
-    onUpdated(() => {
-      // eslint-disable-next-line no-console
-      console.log('Updated!');
     });
     onBeforeUnmount(() => {
       this.stopCount();
