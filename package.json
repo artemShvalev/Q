@@ -10,6 +10,7 @@
   "dependencies": {
     "@quasar/extras": "^1.9.17",
     "core-js": "^3.6.5",
+    "eslint-import-resolver-webpack": "^0.13.0",
     "quasar": "^2.0.0-beta.7",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0"
@@ -23,6 +24,7 @@
     "@vue/cli-service": "^5.0.0-alpha.4",
     "@vue/compiler-sfc": "^3.0.0",
     "@vue/eslint-config-airbnb": "^5.3.0",
+    "@vue/runtime-core": "^3.0.6",
     "eslint": "^7.15.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^7.2.0",
@@ -44,7 +46,9 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {
+      "import/extensions": "off"
+    }
   },
   "browserslist": [
     "> 1%",
